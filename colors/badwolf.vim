@@ -156,6 +156,11 @@ endif
 
 call s:HL('Normal', 'plain', 'blackgravel')
 
+" When you do hi Normal the background option is changed based on the value of
+" Normal. Most values except #000000 force "light", set background=dark should
+" come after Normal because if it doesn't it will most likely be changed anyway:
+set background=dark
+
 call s:HL('Folded', 'mediumgravel', 'bg', 'none')
 
 call s:HL('VertSplit', 'lightgravel', 'bg', 'none')
