@@ -83,6 +83,7 @@ let s:bwc.deadgrass      = ['3b543b',  65]
 let s:bwc.cartoonblood   = ['8c3535', 167]
 let s:bwc.grapemilk      = ['d7d7ff', 189]
 let s:bwc.muddygrapemilk = ['5f5f87',  60]
+
 " }}}
 " Highlighting Function {{{
 function! s:HL(group, fg, ...)
