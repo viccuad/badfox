@@ -407,6 +407,21 @@ call s:HL('IndentGuidesOdd', '', 'blackgravel')
 call s:HL('IndentGuidesEven', '', 'blackestgravel')
 
 " }}}
+" Signify {{{
+
+call s:HL('SignifySignAdd',      'lime', s:gutter)
+call s:HL('SignifySignDelete',  'taffy', s:gutter)
+call s:HL('SignifySignChange', 'orange', s:gutter)
+
+" }}}
+"GitGutter {{{
+
+call s:HL('GitGutterAdd',      'lime', s:gutter)
+call s:HL('GitGutterDelete',  'taffy', s:gutter)
+call s:HL('GitGutterChange', 'orange', s:gutter)
+call s:HL('GitGutterChangeDelete', 'taffy', s:gutter)
+
+" }}}
 
 " }}}
 " Filetype-specific {{{
