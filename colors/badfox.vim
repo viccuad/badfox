@@ -79,6 +79,10 @@ let s:bwc.toffee = ['b88853', 137]
 let s:bwc.coffee    = ['c7915b', 173]
 let s:bwc.darkroast = ['88633f', 95]
 
+let s:bwc.deadgrass      = ['3b543b',  65]
+let s:bwc.cartoonblood   = ['8c3535', 167]
+let s:bwc.grapemilk      = ['d7d7ff', 189]
+let s:bwc.muddygrapemilk = ['5f5f87',  60]
 " }}}
 " Highlighting Function {{{
 function! s:HL(group, fg, ...)
@@ -287,10 +291,10 @@ call s:HL('PmenuThumb', 'brightgravel')
 " }}}
 " Diffs {{{
 
-call s:HL('DiffAdd',      'lime', s:gutter)
-call s:HL('DiffDelete',  'taffy', s:gutter)
-call s:HL('DiffChange', 'orange', s:gutter)
-call s:HL('DiffText',     'snow', s:gutter , 'bold')
+call s:HL('DiffAdd',    'coal', 'deadgrass')
+call s:HL('DiffDelete', 'coal', 'cartoonblood')
+call s:HL('DiffChange', '', 'muddygrapemilk' )
+call s:HL('DiffText',   'grapemilk', 'muddygrapemilk', 'bold')
 
 " }}}
 " Spelling {{{
