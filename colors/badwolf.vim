@@ -163,11 +163,11 @@ set background=dark
 
 call s:HL('Folded', 'mediumgravel', 'bg', 'none')
 
-call s:HL('VertSplit', 'lightgravel', 'bg', 'none')
+call s:HL('VertSplit', 'deepgravel', 'blackgravel', 'bg', 'none')
 
 call s:HL('CursorLine',   '', 'darkgravel', 'none')
 call s:HL('CursorColumn', '', 'darkgravel')
-call s:HL('ColorColumn',  '', 'darkgravel')
+call s:HL('ColorColumn',  '', 'blackgravel')
 
 call s:HL('TabLine', 'plain', s:tabline, 'none')
 call s:HL('TabLineFill', 'plain', s:tabline, 'none')
@@ -193,7 +193,7 @@ call s:HL('Directory', 'dirtyblonde', '', 'bold')
 
 call s:HL('Title', 'lime')
 
-call s:HL('ErrorMsg',   'taffy',       'bg', 'bold')
+call s:HL('ErrorMsg',   'taffy',       '',   'bold')
 call s:HL('MoreMsg',    'dalespale',   '',   'bold')
 call s:HL('ModeMsg',    'dirtyblonde', '',   'bold')
 call s:HL('Question',   'dirtyblonde', '',   'bold')
