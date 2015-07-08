@@ -158,7 +158,7 @@ set background=dark
 
 call s:HL('Folded', 'mediumgravel', 'bg', 'none')
 
-call s:HL('VertSplit', 'deepgravel', 'blackgravel', 'bg', 'none')
+call s:HL('VertSplit', 'deepgravel', 'bg', 'none')
 
 call s:HL('CursorLine',   '', 'darkgravel', 'none')
 call s:HL('CursorColumn', '', 'darkgravel')
