@@ -402,6 +402,12 @@ call s:HL('ShowMarksHLo', 'tardis', 'blackgravel')
 call s:HL('ShowMarksHLm', 'tardis', 'blackgravel')
 
 " }}}
+" IndentGuides {{{
+
+call s:HL('IndentGuidesOdd', '', 'blackgravel')
+call s:HL('IndentGuidesEven', '', 'blackestgravel')
+
+" }}}
 
 " }}}
 " Filetype-specific {{{
