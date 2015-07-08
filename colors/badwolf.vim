@@ -1,32 +1,4 @@
-"      _               _                 _  __
-"     | |__   __ _  __| | __      _____ | |/ _|
-"     | '_ \ / _` |/ _` | \ \ /\ / / _ \| | |_
-"     | |_) | (_| | (_| |  \ V  V / (_) | |  _|
-"     |_.__/ \__,_|\__,_|   \_/\_/ \___/|_|_|
-"
-"      I am the Bad Wolf. I create myself.
-"       I take the words. I scatter them in time and space.
-"        A message to lead myself here.
-"
-" A Vim colorscheme pieced together by Steve Losh.
-" Available at http://stevelosh.com/projects/badwolf/
-"
-" Why? {{{
-"
-" After using Molokai for quite a long time, I started longing for
-" a replacement.
-"
-" I love Molokai's high contrast and gooey, saturated tones, but it can be
-" a little inconsistent at times.
-"
-" Also it's winter here in Rochester, so I wanted a color scheme that's a bit
-" warmer.  A little less blue and a bit more red.
-"
-" And so Bad Wolf was born.  I'm no designer, but designers have been scattering
-" beautiful colors through time and space long before I came along.  I took
-" advantage of that and reused some of my favorites to lead me to this scheme.
-"
-" }}}
+" A Vim colorscheme pieced forked from Badwolf by Steve Losh.
 
 " Supporting code -------------------------------------------------------------
 " Preamble {{{
@@ -41,14 +13,14 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let colors_name = "badwolf"
+let colors_name = "badfox"
 
-if !exists("g:badwolf_html_link_underline") " {{{
-    let g:badwolf_html_link_underline = 1
+if !exists("g:badfox_html_link_underline") " {{{
+    let g:badfox_html_link_underline = 1
 endif " }}}
 
-if !exists("g:badwolf_css_props_highlight") " {{{
-    let g:badwolf_css_props_highlight = 0
+if !exists("g:badfox_css_props_highlight") " {{{
+    let g:badfox_css_props_highlight = 0
 endif " }}}
 
 " }}}
@@ -148,20 +120,20 @@ endfunction
 " }}}
 " Configuration Options {{{
 
-if exists('g:badwolf_darkgutter') && g:badwolf_darkgutter
+if exists('g:badfox_darkgutter') && g:badfox_darkgutter
     let s:gutter = 'blackestgravel'
 else
     let s:gutter = 'blackgravel'
 endif
 
-if exists('g:badwolf_tabline')
-    if g:badwolf_tabline == 0
+if exists('g:badfox_tabline')
+    if g:badfox_tabline == 0
         let s:tabline = 'blackestgravel'
-    elseif  g:badwolf_tabline == 1
+    elseif  g:badfox_tabline == 1
         let s:tabline = 'blackgravel'
-    elseif  g:badwolf_tabline == 2
+    elseif  g:badfox_tabline == 2
         let s:tabline = 'darkgravel'
-    elseif  g:badwolf_tabline == 3
+    elseif  g:badfox_tabline == 3
         let s:tabline = 'deepgravel'
     else
         let s:tabline = 'blackestgravel'
@@ -445,7 +417,7 @@ call s:HL('clojureAnonArg', 'snow', '', 'bold')
 " }}}
 " CSS {{{
 
-if g:badwolf_css_props_highlight
+if g:badfox_css_props_highlight
     call s:HL('cssColorProp', 'dirtyblonde', '', 'none')
     call s:HL('cssBoxProp', 'dirtyblonde', '', 'none')
     call s:HL('cssTextProp', 'dirtyblonde', '', 'none')
@@ -504,7 +476,7 @@ call s:HL('htmlArg', 'coffee', '', 'none')
 
 " Stuff inside an <a> tag
 
-if g:badwolf_html_link_underline
+if g:badfox_html_link_underline
     call s:HL('htmlLink', 'lightgravel', '', 'underline')
 else
     call s:HL('htmlLink', 'lightgravel', '', 'none')
@@ -539,7 +511,7 @@ call s:HL('texComment', 'darkroast', '', 'none')
 call s:HL('texDelimiter', 'orange', '', 'none')
 call s:HL('texZone', 'brightgravel', '', 'none')
 
-augroup badwolf_tex
+augroup badfox_tex
     au!
 
     au BufRead,BufNewFile *.tex syn region texMathZoneV start="\\(" end="\\)\|%stopzone\>" keepend contains=@texMathZoneGroup
