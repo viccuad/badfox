@@ -226,12 +226,12 @@ call s:HL('iCursor', 'coal', 'tardis', 'none')
 call s:HL('Special', 'plain')
 
 " Comments are slightly brighter than folds, to make 'headers' easier to see.
-call s:HL('Comment',        'gravel')
+call s:HL('Comment',        'gravel', '', 'italic')
 call s:HL('Todo',           'snow', 'bg', 'bold')
 call s:HL('SpecialComment', 'snow', 'bg', 'bold')
 
 " Strings are a nice, pale straw color.  Nothing too fancy.
-call s:HL('String', 'dirtyblonde')
+call s:HL('String', 'dirtyblonde', '', 'italic')
 
 " Control flow stuff is taffy.
 call s:HL('Statement',   'taffy', '', 'bold')
