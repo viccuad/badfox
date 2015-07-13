@@ -81,7 +81,7 @@ let s:bwc.darkroast = ['88633f', 95]
 
 let s:bwc.deadgrass      = ['3b543b',  65]
 let s:bwc.cartoonblood   = ['8c3535', 167]
-let s:bwc.grapemilk      = ['d7d7ff', 189]
+let s:bwc.grapemilk      = ['008787',  30]
 let s:bwc.muddygrapemilk = ['5f5f87',  60]
 
 " }}}
@@ -294,8 +294,8 @@ call s:HL('PmenuThumb', 'brightgravel')
 
 call s:HL('DiffAdd',    'coal', 'deadgrass')
 call s:HL('DiffDelete', 'coal', 'cartoonblood')
-call s:HL('DiffChange', '', 'muddygrapemilk' )
-call s:HL('DiffText',   'grapemilk', 'muddygrapemilk', 'bold')
+call s:HL('DiffChange', 'coal', 'muddygrapemilk' )
+call s:HL('DiffText',   'blackestgravel', 'grapemilk', 'bold')
 
 " }}}
 " Spelling {{{
