@@ -87,7 +87,7 @@ let s:bwc.muddygrapemilk = ['5f5f87',  60]
 " }}}
 " Highlighting Function {{{
 function! s:HL(group, fg, ...)
-    " Arguments: group, guifg, guibg, gui, guisp
+    " Arguments: group, guifg/ctermfg, guibg/ctermbg, gui/cterm, guisp
 
     let histring = 'hi ' . a:group . ' '
 
