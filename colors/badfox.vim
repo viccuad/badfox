@@ -131,6 +131,12 @@ else
     let s:gutter = 'blackgravel'
 endif
 
+if exists('g:badfox_darkcolorcolumn') && g:badfox_darkcolorcolumn
+    let s:darkcolorcolumn = 'blackestgravel'
+else
+    let s:darkcolorcolumn = 'blackgravel'
+endif
+
 if exists('g:badfox_tabline')
     if g:badfox_tabline == 0
         let s:tabline = 'blackestgravel'
@@ -167,7 +173,7 @@ call s:HL('VertSplit', 'deepgravel', 'bg', 'none')
 
 call s:HL('CursorLine',   '', 'darkgravel', 'none')
 call s:HL('CursorColumn', '', 'darkgravel')
-call s:HL('ColorColumn',  '', 'blackgravel')
+call s:HL('ColorColumn',  '', s:darkcolorcolumn)
 
 call s:HL('TabLine', 'plain', s:tabline, 'none')
 call s:HL('TabLineFill', 'plain', s:tabline, 'none')
