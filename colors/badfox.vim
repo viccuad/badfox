@@ -429,6 +429,9 @@ call s:HL('GitGutterChange', 'orange', s:gutter)
 call s:HL('GitGutterChangeDelete', 'taffy', s:gutter)
 
 " }}}
+"Vim-troll-stopper {{{
+call s:HL('TrollStopper ', 'taffy', '', 'bold')
+" }}}
 
 " }}}
 " Filetype-specific {{{
